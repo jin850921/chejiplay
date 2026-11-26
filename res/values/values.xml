@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">車機Play</string>
+
+    <attr name="cpBg" format="color" />
+    <attr name="cpSurface" format="color" />
+    <attr name="cpSurfaceAlt" format="color" />
+    <attr name="cpOutline" format="color" />
+    <attr name="cpText" format="color" />
+    <attr name="cpTextDim" format="color" />
+    <attr name="cpAccent" format="color" />
+    <attr name="cpOnAccent" format="color" />
+    <attr name="cpWarn" format="color" />
+    <attr name="cpBadge" format="color" />
+    <attr name="cpArt" format="color" />
+    <attr name="cpOk" format="color" />
+    <attr name="cpTrack" format="color" />
+
+    <color name="ic_launcher_background">#FF1C2E42</color>
+
+    <color name="light_bg">#FFF2F5F8</color>
+    <color name="light_surface">#FFFFFFFF</color>
+    <color name="light_surface_alt">#FFEAEFF5</color>
+    <color name="light_outline">#FFD3DAE2</color>
+    <color name="light_text">#FF1A222C</color>
+    <color name="light_text_dim">#FF5B6675</color>
+    <color name="light_accent">#FF2F6FB0</color>
+    <color name="light_on_accent">#FFFFFFFF</color>
+    <color name="light_warn">#FF8F5300</color>
+    <color name="light_badge">#FFD93025</color>
+    <color name="light_art">#FF8F9CAB</color>
+    <color name="light_ok">#FF1C7345</color>
+    <color name="light_track">#FFDFE5EC</color>
+    <color name="light_popup">#FFFFFFFF</color>
+    <color name="light_popup_line">#FFB7C2CF</color>
+
+    <color name="dark_bg">#FF13171C</color>
+    <color name="dark_surface">#FF1D232B</color>
+    <color name="dark_surface_alt">#FF272F39</color>
+    <color name="dark_outline">#FF3A4551</color>
+    <color name="dark_text">#FFE9EEF4</color>
+    <color name="dark_text_dim">#FF9BA8B7</color>
+    <color name="dark_accent">#FF6FA8E6</color>
+    <color name="dark_on_accent">#FF0D1720</color>
+    <color name="dark_warn">#FFE2AC70</color>
+    <color name="dark_badge">#FFE5484D</color>
+    <color name="dark_art">#FF525F6E</color>
+    <color name="dark_ok">#FF79CFA0</color>
+    <color name="dark_track">#FF2A323C</color>
+    <color name="dark_popup">#FF333F4B</color>
+    <color name="dark_popup_line">#FF5A6878</color>
+
+    <style name="Theme.ChejiPlay.Light" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="cpBg">@color/light_bg</item>
+        <item name="cpSurface">@color/light_surface</item>
+        <item name="cpSurfaceAlt">@color/light_surface_alt</item>
+        <item name="cpOutline">@color/light_outline</item>
+        <item name="cpText">@color/light_text</item>
+        <item name="cpTextDim">@color/light_text_dim</item>
+        <item name="cpAccent">@color/light_accent</item>
+        <item name="cpOnAccent">@color/light_on_accent</item>
+        <item name="cpWarn">@color/light_warn</item>
+        <item name="cpBadge">@color/light_badge</item>
+        <item name="cpArt">@color/light_art</item>
+        <item name="cpOk">@color/light_ok</item>
+        <item name="cpTrack">@color/light_track</item>
+        <item name="android:windowBackground">@color/light_bg</item>
+        <item name="android:colorBackground">@color/light_bg</item>
+        <item name="android:popupMenuStyle">@style/Popup.ChejiPlay.Light</item>
+    </style>
+
+    <style name="Theme.ChejiPlay.Dark" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="cpBg">@color/dark_bg</item>
+        <item name="cpSurface">@color/dark_surface</item>
+        <item name="cpSurfaceAlt">@color/dark_surface_alt</item>
+        <item name="cpOutline">@color/dark_outline</item>
+        <item name="cpText">@color/dark_text</item>
+        <item name="cpTextDim">@color/dark_text_dim</item>
+        <item name="cpAccent">@color/dark_accent</item>
+        <item name="cpOnAccent">@color/dark_on_accent</item>
+        <item name="cpWarn">@color/dark_warn</item>
+        <item name="cpBadge">@color/dark_badge</item>
+        <item name="cpArt">@color/dark_art</item>
+        <item name="cpOk">@color/dark_ok</item>
+        <item name="cpTrack">@color/dark_track</item>
+        <item name="android:windowBackground">@color/dark_bg</item>
+        <item name="android:colorBackground">@color/dark_bg</item>
+        <item name="android:popupMenuStyle">@style/Popup.ChejiPlay.Dark</item>
+    </style>
+
+    <!-- 深色彈窗預設只靠陰影分層，在車機上跟 #13171C 底幾乎分不開；自帶框線才可靠。 -->
+    <style name="Popup.ChejiPlay.Dark" parent="@android:style/Widget.Material.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_bg_dark</item>
+    </style>
+
+    <!-- 淺色同一個問題：白底彈窗在 #F2F5F8 上只靠陰影分不出邊界，框線粗細與圓角跟深色一致。 -->
+    <style name="Popup.ChejiPlay.Light" parent="@android:style/Widget.Material.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_bg_light</item>
+    </style>
+</resources>

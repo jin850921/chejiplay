@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 與 mipmap/ic_launcher 同一個商標：播放三角形＋儀表弧。
+     座標由 res/mipmap-xxxhdpi/ic_launcher_foreground.png（432px）逐列量出後平移（原點 130,131）：
+     三角形 (196,139)(196,222)(259,183)；弧中心線橢圓 rx69／ry40、線寬 18、圓頭端點。
+     純白讓它跟 DiPlay 卡一樣走反白規則。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="25dp"
+    android:viewportWidth="172"
+    android:viewportHeight="178">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M66,8 L66,91 L129.5,52 Z" />
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="18"
+        android:strokeLineCap="round"
+        android:pathData="M16.8,161.5 A69,40 0 1 1 154.2,161.5" />
+</vector>

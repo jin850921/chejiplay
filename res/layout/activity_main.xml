@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/artCar"
+        android:layout_width="320dp"
+        android:layout_height="112dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/art_car_side" />
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="6dp">
+
+            <FrameLayout
+                android:id="@+id/logoBadge"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="14dp">
+
+                <ImageView
+                    android:id="@+id/logoGlyph"
+                    android:layout_width="30dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_logo" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/app_name"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subtitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnTheme"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:focusable="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_theme" />
+
+            <FrameLayout
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="2dp">
+
+                <ImageView
+                    android:id="@+id/btnMenu"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_more" />
+
+                <View
+                    android:id="@+id/menuDot"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="end|top"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/versionLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="8dp"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/cardHost"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+
+            <!-- CarPlay／Android Auto 獨立一排，永遠在上面 -->
+            <LinearLayout
+                android:id="@+id/modHost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <!-- Maps 與自訂欄位是另一排 -->
+            <LinearLayout
+                android:id="@+id/scHost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="14dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="24dp"
+            android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 載入畫面：蓋在整個主畫面最上層，所以寫在 ScrollView 之後。
+         預設 gone，只有程序冷開機那一次由 MainActivity 打開；換主題／換語言走 recreate()，不會重播。 -->
+    <LinearLayout
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/splashBadge"
+            android:layout_width="88dp"
+            android:layout_height="88dp">
+
+            <ImageView
+                android:id="@+id/splashGlyph"
+                android:layout_width="47dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_logo" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/splashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/splashHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:textSize="14sp" />
+
+        <!-- 啟動進度：確定式進度條，和卡片上的下載條同一個 max=1000，
+             顏色由 Core.Ui.bar() 在程式端統一上色。 -->
+        <ProgressBar
+            android:id="@+id/splashBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:indeterminate="false"
+            android:max="1000"
+            android:progress="0" />
+
+        <ImageView
+            android:id="@+id/splashCar"
+            android:layout_width="330dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="26dp"
+            android:contentDescription="@null"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/art_car_side" />
+    </LinearLayout>
+</FrameLayout>

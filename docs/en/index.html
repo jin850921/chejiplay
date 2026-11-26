@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" dir="ltr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>車機Play · CarPlay and Android Auto download and launch hub</title>
+<meta name="description" content="Fetches the latest DiPlay (CarPlay) and DiAuto (Android Auto) APKs onto your Android head unit and opens them with one tap, and can pin Google Maps plus up to two apps you choose. Independent community project, not affiliated with Apple, Google or BYD.">
+<meta name="theme-color" content="#0F2B45">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="canonical" href="https://jin850921.github.io/chejiplay/en/">
+<link rel="alternate" hreflang="zh-Hant" href="https://jin850921.github.io/chejiplay/"><link rel="alternate" hreflang="zh-Hans" href="https://jin850921.github.io/chejiplay/zh-Hans/"><link rel="alternate" hreflang="en" href="https://jin850921.github.io/chejiplay/en/"><link rel="alternate" hreflang="ja" href="https://jin850921.github.io/chejiplay/ja/"><link rel="alternate" hreflang="ko" href="https://jin850921.github.io/chejiplay/ko/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="車機Play · CarPlay and Android Auto download and launch hub">
+<meta property="og:description" content="Fetches the latest DiPlay (CarPlay) and DiAuto (Android Auto) APKs onto your Android head unit and opens them with one tap, and can pin Google Maps plus up to two apps you choose. Independent community project, not affiliated with Apple, Google or BYD.">
+<meta property="og:url" content="https://jin850921.github.io/chejiplay/en/">
+<meta property="og:image" content="https://jin850921.github.io/chejiplay/screenshots/01_主畫面_淺色.png">
+<meta name="twitter:card" content="summary_large_image">
+</head><body><main>
+<header>
+<a class="brand" href="../"><img src="../icon.png" width="56" height="56" alt="">
+<span><strong>車機Play</strong><small>Independent community project</small></span></a>
+<nav class="languages" aria-label="Language"><a href="../" lang="zh-Hant" hreflang="zh-Hant">繁體中文（台灣）</a><a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a><a href="../en/" lang="en" hreflang="en" aria-current="page">English</a><a href="../ja/" lang="ja" hreflang="ja">日本語</a><a href="../ko/" lang="ko" hreflang="ko">한국어</a></nav>
+</header>
+<section class="hero">
+<span class="badge">First release · <bdi>1.0</bdi></span>
+<h1>CarPlay and Android Auto,<br>one tap on the head unit</h1>
+<p class="intro">A card-based download and launch hub: it fetches the newest DiPlay／DiAuto APKs, and once installed a card opens them straight away.</p>
+<div class="actions">
+<a class="button" href="https://github.com/jin850921/chejiplay/releases/download/v1.0/chejiplay-1.0.apk">Download APK <span aria-hidden="true">↓</span></a>
+<a class="button secondary" href="#s0">How to install</a>
+<a class="button secondary" href="https://github.com/jin850921/chejiplay">Source on GitHub</a>
+</div>
+<p class="promise">No root, no ADB, no phone-side app.</p>
+<p class="note">The APK goes on the car, not on your phone. Pure Java and framework APIs: no Gradle, no AndroidX, no third-party dependencies. Whether the head unit allows installing and auto-start is decided by its own system.</p>
+<p class="note scope"><strong>DiPlay and DiAuto focus on BYD head units; other brands may work but are not guaranteed.</strong></p>
+</section>
+<section class="gallery"><h2>Screens</h2>
+<div class="screens"><figure>
+<a href="../screenshots/01_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%BA%E8%89%B2.png"><img src="../screenshots/01_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%BA%E8%89%B2.png"
+width="1280" height="720" loading="lazy" alt="Home screen (light): DiPlay and DiAuto on top, Google Maps plus two custom shortcuts below."></a>
+<figcaption>Home screen (light): DiPlay and DiAuto on top, Google Maps plus two custom shortcuts below.</figcaption></figure><figure>
+<a href="../screenshots/02_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%B1%E8%89%B2.png"><img src="../screenshots/02_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%B1%E8%89%B2.png"
+width="1280" height="720" loading="lazy" alt="Home screen (dark): the same layout, colours follow the theme."></a>
+<figcaption>Home screen (dark): the same layout, colours follow the theme.</figcaption></figure><figure>
+<a href="../screenshots/07_%E4%B8%BB%E7%95%AB%E9%9D%A2%E5%BF%AB%E6%8D%B7%E9%88%95%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94.png"><img src="../screenshots/07_%E4%B8%BB%E7%95%AB%E9%9D%A2%E5%BF%AB%E6%8D%B7%E9%88%95%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94.png"
+width="2680" height="812" loading="lazy" alt="Shortcuts off to on: the bottom row goes from absent to three equal-width cards."></a>
+<figcaption>Shortcuts off to on: the bottom row goes from absent to three equal-width cards.</figcaption></figure><figure>
+<a href="../screenshots/09_%E6%89%8B%E5%8B%95%E6%AC%84%E4%BD%8D_%E6%9C%AA%E6%94%BE%E8%88%87%E5%B7%B2%E6%94%BE%E5%B0%8D%E6%AF%94.png"><img src="../screenshots/09_%E6%89%8B%E5%8B%95%E6%AC%84%E4%BD%8D_%E6%9C%AA%E6%94%BE%E8%88%87%E5%B7%B2%E6%94%BE%E5%B0%8D%E6%AF%94.png"
+width="2680" height="812" loading="lazy" alt="Manual slots: before picking apps, and after both slots are filled."></a>
+<figcaption>Manual slots: before picking apps, and after both slots are filled.</figcaption></figure><figure>
+<a href="../screenshots/06_%E8%BC%89%E5%85%A5%E5%8B%95%E7%95%AB.png"><img src="../screenshots/06_%E8%BC%89%E5%85%A5%E5%8B%95%E7%95%AB.png"
+width="1316" height="812" loading="lazy" alt="Four moments of the launch animation (cold start only, 1.5 s total)."></a>
+<figcaption>Four moments of the launch animation (cold start only, 1.5 s total).</figcaption></figure></div>
+<p class="note">Every image is a 1:1 1280×720 reference render built from the actual colours and layout in `res/`, not a design mock-up; nothing has been verified on a real head unit yet.</p></section>
+<section class="card" id="s0" style="scroll-margin-top:12px">
+<span class="eyebrow">01</span>
+<h2>Install it on the car</h2>
+<p>Install on the head unit, not on an iPhone or an Android phone. The app works offline; only the update check and the APK download need a network.</p>
+<ol><li>While parked, download <code>chejiplay-1.0.apk</code> and open it with the head unit's own installer; installing APKs from other sources must be allowed.</li><li>Open 車機Play. The two rows of cards read the install state from the head unit directly.</li><li>Add 車機Play to your head unit's boot-start list so this screen opens every time the display wakes. Where that list lives depends on the brand.</li><li>Tap a card to enter CarPlay or Android Auto. If that project is not installed yet, the card downloads it first; long-press while downloading to cancel.</li></ol><p class="note">No ADB and no root are required. This app never modifies or repackages DiPlay／DiAuto - the download location is always the official asset in their own Releases.</p>
+</section><section class="card" id="s1">
+<span class="eyebrow">02</span>
+<h2>What the app does</h2>
+
+<ul><li>Two rows of cards: DiPlay (CarPlay) and DiAuto (Android Auto) on top, Google Maps and one or two apps you choose on the bottom row.</li><li>Checks GitHub Releases once a day and never opens a reminder screen - a new version only lights a red dot on the ⋮ menu.</li><li>The card is the action: not installed means download, installed means open. Long-press reveals cancel／change／remove.</li><li>A finished APK is handed to the head unit's own installer; nothing goes through an intermediate service.</li><li>The ⋮ menu has nine rows: check versions, three download sources, batch download, this app's update, shortcuts, the guide page, language and theme.</li></ul>
+</section><section class="card" id="s2">
+<span class="eyebrow">03</span>
+<h2>Shortcuts and icons</h2>
+
+<ul><li>Every icon in the bottom row comes from the installed app itself; when the head unit reports one, it is drawn full-bleed with no colour override.</li><li>Only when nothing is found does the built-in default appear: an official-colour pin for Google Maps, a plus sign for an empty slot.</li><li>After an install, a removal, or an icon change in that app, the card repaints on resume or on the package broadcast - no restart needed.</li><li>The Google Maps shortcut only opens the app. It never downloads and never checks for updates; Google Play on the head unit maintains Maps.</li><li>Up to two manual slots: a tap picks or opens an app, a long-press changes it or removes the card.</li></ul>
+</section><section class="card" id="s3">
+<span class="eyebrow">04</span>
+<h2>Launch animation</h2>
+<p>A cold start covers the screen with a 1.5-second animation. Switching theme or language repaints the UI without replaying it.</p>
+<ul><li>The car outline drives in from the left, the logo badge pops into place, then the title and hint fade in.</li><li>The bar shows launch progress: it follows the animation from 0 to 90 percent, and the last 10 percent only unlocks when the first layout pass really returns.</li><li>The layer fades out as soon as layout completes; a 3-second backstop always closes it, and on that path the bar keeps the value it actually reached.</li></ul>
+</section><section class="card" id="s4">
+<span class="eyebrow">05</span>
+<h2>Interface language</h2>
+<p>Traditional Chinese, Simplified Chinese, English, Japanese and Korean, plus Auto, which follows the head unit's locale.</p>
+<ul><li>The screen repaints immediately; no reinstall and no lost settings.</li><li>App names, brand names and the names of the apps on your head unit are deliberately not translated - translating them would make those apps unfindable.</li><li>Translations are written by the maintainer and have not been reviewed by native speakers. To change a sentence, edit one line in `L.java`.</li></ul>
+</section><section class="card" id="s5">
+<span class="eyebrow">06</span>
+<h2>Updates and signing</h2>
+<p>Versions are always written as `version_name(version_code)`, for example <bdi>1.0(1)</bdi>.</p>
+<ul><li>The daily check reads this repository's Releases: tag <code>v1.0</code>, asset <code>chejiplay-1.0.apk</code>.</li><li>Checking only compares version numbers; it never installs. Downloads and updates always start from the ⋮ menu rows.</li><li>A new version must be signed with the same key or the head unit refuses the upgrade install. The key and its password file are not in this repository.</li><li>The batch row downloads DiPlay and DiAuto only; updating 車機Play is its own menu row.</li></ul>
+</section><section class="card" id="s6">
+<span class="eyebrow">07</span>
+<h2>Not yet verified on a head unit</h2>
+<p>No real car and no emulator were used during development. All verification is static: badging, resource IDs, the DEX string pool and bytecode are read back out of the signed APK, plus a translation-coverage check and 1280×720 reference renders.</p>
+<ul><li>Real appearance, whether the head unit grants the install permission, and how long each translated line wraps - all of that needs a vehicle.</li><li>Whether your head unit reports Google Maps' own icon (when it does not, the card shows the built-in pin rather than a blank tile).</li><li>How many characters a toast fits in the head unit's font. Lengths are estimated at 14sp and every sentence is kept inside a width already known to fit.</li></ul><p class="note">When reporting a problem, include the head unit brand, DiLink／Android version, APK version and the time it happened.</p>
+<a href="https://github.com/jin850921/chejiplay/issues/new/choose" target="_blank" rel="noopener">Report an issue ↗</a></section>
+<footer><nav><a href="https://github.com/jin850921/chejiplay">Source code</a><a href="https://github.com/jin850921/chejiplay/releases">Releases</a><a href="https://github.com/jin850921/chejiplay/issues">Report an issue</a><a href="https://github.com/jin850921/chejiplay/blob/main/README.en.md">English README</a></nav><p>車機Play is an independent community project with no affiliation to Apple, Google or BYD. DiPlay and DiAuto are separate community projects on GitHub; this app only fetches their newest APK and opens it, always from the official asset in their Releases. CarPlay and its icon belong to Apple Inc.; Android Auto and its icon belong to Google LLC.</p></footer>
+</main></body></html>

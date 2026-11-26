@@ -1,0 +1,8 @@
+# 簽金鑰與密碼檔只留在作者這臺電腦：推上去等於任何人都能簽出同套件名的 APK 蓋掉更新。
+chejiplay.p12
+keystore.pass
+
+# 建置產物與暫存
+.build/
+out/
+tools/MakeIcon.class

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko" dir="ltr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>車機Play · CarPlay／Android Auto 다운로드 및 실행</title>
+<meta name="description" content="DiPlay(CarPlay)와 DiAuto(Android Auto)의 최신 APK를 차량용 헤드유닛에 받고, 카드를 탭하면 바로 실행됩니다. Google Maps와 직접 고른 앱을 최대 2개까지 단축 버튼으로 붙일 수 있습니다. Apple, Google, BYD와 무관한 독립 커뮤니티 프로젝트입니다.">
+<meta name="theme-color" content="#0F2B45">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="canonical" href="https://jin850921.github.io/chejiplay/ko/">
+<link rel="alternate" hreflang="zh-Hant" href="https://jin850921.github.io/chejiplay/"><link rel="alternate" hreflang="zh-Hans" href="https://jin850921.github.io/chejiplay/zh-Hans/"><link rel="alternate" hreflang="en" href="https://jin850921.github.io/chejiplay/en/"><link rel="alternate" hreflang="ja" href="https://jin850921.github.io/chejiplay/ja/"><link rel="alternate" hreflang="ko" href="https://jin850921.github.io/chejiplay/ko/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="車機Play · CarPlay／Android Auto 다운로드 및 실행">
+<meta property="og:description" content="DiPlay(CarPlay)와 DiAuto(Android Auto)의 최신 APK를 차량용 헤드유닛에 받고, 카드를 탭하면 바로 실행됩니다. Google Maps와 직접 고른 앱을 최대 2개까지 단축 버튼으로 붙일 수 있습니다. Apple, Google, BYD와 무관한 독립 커뮤니티 프로젝트입니다.">
+<meta property="og:url" content="https://jin850921.github.io/chejiplay/ko/">
+<meta property="og:image" content="https://jin850921.github.io/chejiplay/screenshots/01_主畫面_淺色.png">
+<meta name="twitter:card" content="summary_large_image">
+</head><body><main>
+<header>
+<a class="brand" href="../"><img src="../icon.png" width="56" height="56" alt="">
+<span><strong>車機Play</strong><small>독립 커뮤니티 프로젝트</small></span></a>
+<nav class="languages" aria-label="Language"><a href="../" lang="zh-Hant" hreflang="zh-Hant">繁體中文（台灣）</a><a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a><a href="../en/" lang="en" hreflang="en">English</a><a href="../ja/" lang="ja" hreflang="ja">日本語</a><a href="../ko/" lang="ko" hreflang="ko" aria-current="page">한국어</a></nav>
+</header>
+<section class="hero">
+<span class="badge">최초 릴리스 · <bdi>1.0</bdi></span>
+<h1>차량 화면의<br>CarPlay／Android Auto 입구</h1>
+<p class="intro">카드 형태의 다운로드·실행 입구입니다. DiPlay／DiAuto의 최신 APK를 받고, 설치 후에는 카드를 탭하면 바로 들어갑니다.</p>
+<div class="actions">
+<a class="button" href="https://github.com/jin850921/chejiplay/releases/download/v1.0/chejiplay-1.0.apk">APK 다운로드 <span aria-hidden="true">↓</span></a>
+<a class="button secondary" href="#s0">설치 방법</a>
+<a class="button secondary" href="https://github.com/jin850921/chejiplay">GitHub 소스</a>
+</div>
+<p class="promise">root 불필요, ADB 불필요, 폰 앱도 불필요.</p>
+<p class="note">APK는 폰이 아니라 차량용 헤드유닛에 설치합니다. Java와 framework API만으로 만든 프로젝트로 Gradle, AndroidX, 외부 의존성이 전혀 없습니다. 설치 허용과 부팅 시 자동 시작 등록 여부는 헤드유닛 시스템이 결정합니다.</p>
+<p class="note scope"><strong>DiPlay와 DiAuto는 BYD 차량용 헤드유닛을 기준으로 하므로 다른 브랜드는 동작을 보장하지 않습니다.</strong></p>
+</section>
+<section class="gallery"><h2>화면</h2>
+<div class="screens"><figure>
+<a href="../screenshots/01_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%BA%E8%89%B2.png"><img src="../screenshots/01_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%BA%E8%89%B2.png"
+width="1280" height="720" loading="lazy" alt="홈 화면(밝게): 위쪽은 DiPlay／DiAuto, 아래쪽은 Google Maps와 직접 지정한 단축 버튼 두 칸."></a>
+<figcaption>홈 화면(밝게): 위쪽은 DiPlay／DiAuto, 아래쪽은 Google Maps와 직접 지정한 단축 버튼 두 칸.</figcaption></figure><figure>
+<a href="../screenshots/02_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%B1%E8%89%B2.png"><img src="../screenshots/02_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%B1%E8%89%B2.png"
+width="1280" height="720" loading="lazy" alt="홈 화면(어둡게): 같은 배치, 색만 테마를 따릅니다."></a>
+<figcaption>홈 화면(어둡게): 같은 배치, 색만 테마를 따릅니다.</figcaption></figure><figure>
+<a href="../screenshots/07_%E4%B8%BB%E7%95%AB%E9%9D%A2%E5%BF%AB%E6%8D%B7%E9%88%95%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94.png"><img src="../screenshots/07_%E4%B8%BB%E7%95%AB%E9%9D%A2%E5%BF%AB%E6%8D%B7%E9%88%95%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94.png"
+width="2680" height="812" loading="lazy" alt="단축 버튼 끄기 → 켜기: 아래쪽 줄이 아예 없는 상태에서 폭이 같은 카드 세 장으로 바뀝니다."></a>
+<figcaption>단축 버튼 끄기 → 켜기: 아래쪽 줄이 아예 없는 상태에서 폭이 같은 카드 세 장으로 바뀝니다.</figcaption></figure><figure>
+<a href="../screenshots/09_%E6%89%8B%E5%8B%95%E6%AC%84%E4%BD%8D_%E6%9C%AA%E6%94%BE%E8%88%87%E5%B7%B2%E6%94%BE%E5%B0%8D%E6%AF%94.png"><img src="../screenshots/09_%E6%89%8B%E5%8B%95%E6%AC%84%E4%BD%8D_%E6%9C%AA%E6%94%BE%E8%88%87%E5%B7%B2%E6%94%BE%E5%B0%8D%E6%AF%94.png"
+width="2680" height="812" loading="lazy" alt="수동 칸: 앱을 고르기 전과 두 칸 모두 고른 뒤."></a>
+<figcaption>수동 칸: 앱을 고르기 전과 두 칸 모두 고른 뒤.</figcaption></figure><figure>
+<a href="../screenshots/06_%E8%BC%89%E5%85%A5%E5%8B%95%E7%95%AB.png"><img src="../screenshots/06_%E8%BC%89%E5%85%A5%E5%8B%95%E7%95%AB.png"
+width="1316" height="812" loading="lazy" alt="로딩 애니메이션의 네 시점(콜드 스타트 때 한 번, 전체 1.5초)."></a>
+<figcaption>로딩 애니메이션의 네 시점(콜드 스타트 때 한 번, 전체 1.5초).</figcaption></figure></div>
+<p class="note">모두 1280×720을 1:1로 렌더한 비교 그림입니다. 저장소의 `res/`에 있는 실제 색과 배치를 그대로 사용했으며, 디자인 시안이 아닙니다. 실차 검증은 아직 없습니다.</p></section>
+<section class="card" id="s0" style="scroll-margin-top:12px">
+<span class="eyebrow">01</span>
+<h2>차량에 설치</h2>
+<p>iPhone이나 Android 폰이 아니라 차량용 헤드유닛에 설치합니다. 앱 자체는 오프라인에서도 동작하며, 네트워크가 필요한 것은 업데이트 확인과 APK 다운로드뿐입니다.</p>
+<ol><li>정차 중에 <code>chejiplay-1.0.apk</code>를 내려받아 헤드유닛의 설치 앱으로 여십시오. 다른 출처의 APK 설치가 허용되어 있어야 합니다.</li><li>「車機Play」를 열면 두 줄의 카드가 헤드유닛의 설치 상태를 직접 읽어옵니다.</li><li>「車機Play」를 부팅 자동 시작 목록에 넣으면 화면이 켜질 때마다 이 페이지가 열립니다. 목록의 이름과 위치는 차량 브랜드마다 다릅니다.</li><li>카드를 탭하면 CarPlay 또는 Android Auto로 들어갑니다. 아직 설치되지 않았다면 먼저 다운로드하며, 다운로드 중에 길게 누르면 취소할 수 있습니다.</li></ol><p class="note">ADB와 root가 필요 없습니다. DiPlay／DiAuto의 APK를 수정하거나 재포장하지 않으며, 다운로드 위치는 항상 해당 Releases의 공식 자산입니다.</p>
+</section><section class="card" id="s1">
+<span class="eyebrow">02</span>
+<h2>이 앱이 하는 일</h2>
+
+<ul><li>홈은 두 줄 카드입니다. 위쪽은 DiPlay(CarPlay)와 DiAuto(Android Auto), 아래쪽은 Google Maps와 직접 고른 1–2개 앱.</li><li>GitHub Releases를 하루 한 번 확인하지만 알림 화면은 띄우지 않습니다. 새 버전이 있으면 오른쪽 위 ⋮에만 빨간 점이 켜집니다.</li><li>카드 자체가 동작입니다. 설치 전이면 다운로드, 설치 후에는 실행. 길게 눌러야 취소／교체／제거가 나타납니다.</li><li>다운로드가 끝난 APK는 헤드유닛의 설치 앱에 넘기고, 중간 서비스는 거치지 않습니다.</li><li>오른쪽 위 ⋮는 모두 9개 행입니다. 버전 확인, 세 개의 다운로드 출처, 묶음 다운로드, 이 앱 업데이트, 단축 버튼 설정, 설명 페이지, 언어, 테마.</li></ul>
+</section><section class="card" id="s2">
+<span class="eyebrow">03</span>
+<h2>단축 버튼과 아이콘</h2>
+
+<ul><li>아래쪽 줄의 그림은 전부 헤드유닛에 설치된 앱 자신의 아이콘을 사용합니다. 찾으면 색을 덮지 않고 가득 채워 표시합니다.</li><li>찾지 못할 때만 기본 내장 그림으로 돌아갑니다. Google Maps는 공식 배색 핀, 비어 있는 칸은 「＋」입니다.</li><li>설치되거나 삭제되거나 해당 앱의 아이콘이 바뀌면, 이 앱으로 돌아오거나 패키지 브로드캐스트를 받는 순간 다시 그리므로 프로그램을 다시 켤 필요가 없습니다.</li><li>Google Maps 단축 버튼은 실행만 담당합니다. 다운로드도 업데이트 확인도 하지 않으며, Maps 관리는 헤드유닛의 Google Play에 맡깁니다.</li><li>수동 칸은 최대 두 개입니다. 탭하면 선택 또는 실행, 길게 누르면 교체 또는 홈 화면에서 제거.</li></ul>
+</section><section class="card" id="s3">
+<span class="eyebrow">04</span>
+<h2>로딩 애니메이션</h2>
+<p>콜드 스타트로 홈에 들어올 때 1.5초 동안 로딩 레이어가 화면을 덮습니다. 테마나 언어를 바꾸면 화면만 다시 그리며 재생하지 않습니다.</p>
+<ul><li>차량 라인아트 화면 왼쪽에서 들어오고, 로고 배지가 튀어 제자리에 앉은 뒤 제목과 안내가 페이드인합니다.</li><li>진행 표시줄은 시작 진행률을 보여 줍니다. 애니메이션과 함께 0에서 90%까지 가고, 마지막 10%는 첫 레이아웃이 실제로 돌아와야 열립니다.</li><li>레이아웃이 끝나면 레이어 전체가 페이드아웃합니다. 안전 상한은 3초이며 그 경로로 끝나면 실제로 도달한 값 그대로 두고 다 읽은 척하지 않습니다.</li></ul>
+</section><section class="card" id="s4">
+<span class="eyebrow">05</span>
+<h2>인터페이스 언어</h2>
+<p>번체 중국어, 간체 중국어, English, 日本語, 한국어와 헤드유닛 언어를 따르는 「자동」을 고를 수 있습니다.</p>
+<ul><li>고르면 즉시 화면을 다시 그립니다. 재설치도 없고 설정도 사라지지 않습니다.</li><li>앱 이름, 브랜드 이름, 헤드유닛에 설치된 앱의 이름은 일부러 번역하지 않습니다. 번역하면 그 앱을 찾을 수 없게 됩니다.</li><li>번역문은 유지보수자가 작성했으며 원어민 감수를 거치지 않았습니다. 문장을 고치려면 `L.java`의 해당 행을 수정하면 됩니다.</li></ul>
+</section><section class="card" id="s5">
+<span class="eyebrow">06</span>
+<h2>업데이트와 서명</h2>
+<p>버전은 항상 `version_name(version_code)` 형식으로 표시합니다. 예: <bdi>1.0(1)</bdi>.</p>
+<ul><li>매일 확인하는 곳은 이 저장소의 Releases입니다. tag는 <code>v1.0</code>, 자산 이름은 <code>chejiplay-1.0.apk</code>.</li><li>확인은 버전 번호만 비교하고 스스로 설치하지 않습니다. 다운로드와 업데이트는 모두 ⋮ 메뉴의 행에서 직접 실행합니다.</li><li>새 버전으로 갈아타려면 같은 서명 키를 써야 합니다. 다르면 헤드유닛이 업그레이드 설치를 거부합니다. 키와 비밀번호 파일은 저장소에 두지 않습니다.</li><li>「DiPlay＋DiAuto 모두 다운로드」는 묶음 행이며 이 앱을 포함하지 않습니다. 車機Play 업데이트는 별도의 행입니다.</li></ul>
+</section><section class="card" id="s6">
+<span class="eyebrow">07</span>
+<h2>실차 검증은 아직</h2>
+<p>개발 중에 실제 차량이나 에뮬레이터에 연결해 보지 않았습니다. 검증은 모두 정적입니다. 서명된 APK에서 badging, 리소스 ID, DEX 문자열 풀과 바이트코드를 뽑아 비교하고, 번역 커버리지 검사와 1280×720 비교 그림을 함께 확인했습니다.</p>
+<ul><li>실제 모습, 헤드유닛이 설치 권한을 주는지, 언어별로 줄바꿈 뒤 문자열 길이는 차량에 설치해 봐야 알 수 있습니다.</li><li>헤드유닛이 Google Maps 자신의 아이콘을 알려주는지 (알려주지 않으면 그 카드는 내장 핀으로 표시되고 빈칸이 되지는 않습니다).</li><li>Toast 문장이 헤드유닛 글꼴에서 몇 글자까지 들어가는지. 길이는 14sp로 계산해 이미 들어가는 폭이 확인된 너비 안에 각 문장을 맞춰 두었습니다.</li></ul><p class="note">문제가 생기면 헤드유닛 브랜드, DiLink／Android 버전, APK 버전, 발생 시각을 적어 issue를 열어 주십시오.</p>
+<a href="https://github.com/jin850921/chejiplay/issues/new/choose" target="_blank" rel="noopener">문제 신고 ↗</a></section>
+<footer><nav><a href="https://github.com/jin850921/chejiplay">소스 코드</a><a href="https://github.com/jin850921/chejiplay/releases">Releases</a><a href="https://github.com/jin850921/chejiplay/issues">문제 신고</a><a href="https://github.com/jin850921/chejiplay/blob/main/README.ko.md">한국어 README</a></nav><p>車機Play는 Apple, Google, BYD와 일체 연관이 없는 독립 커뮤니티 프로젝트입니다. DiPlay와 DiAuto는 GitHub의 별개 커뮤니티 프로젝트이며, 이 앱은 최신 APK를 받아 실행하는 일만 하고 다운로드 위치는 항상 해당 Releases의 공식 자산입니다. CarPlay와 그 아이콘은 Apple Inc.에, Android Auto와 그 아이콘은 Google LLC에 속합니다.</p></footer>
+</main></body></html>

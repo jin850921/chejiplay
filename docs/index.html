@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant" dir="auto"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>車機Play · CarPlay／Android Auto 的下載與啟動入口</title>
+<meta name="description" content="把 DiPlay（CarPlay）與 DiAuto（Android Auto）的最新版 APK 抓進車機，點卡片就開啟；還能掛 Google Maps 與你自己挑的快捷鈕。獨立社群專案，與 Apple、Google、BYD 無隸屬關係。">
+<meta name="theme-color" content="#0F2B45">
+<link rel="icon" href="./icon.png">
+<link rel="stylesheet" href="./assets/site.css">
+<link rel="canonical" href="https://jin850921.github.io/chejiplay/">
+<link rel="alternate" hreflang="zh-Hant" href="https://jin850921.github.io/chejiplay/"><link rel="alternate" hreflang="zh-Hans" href="https://jin850921.github.io/chejiplay/zh-Hans/"><link rel="alternate" hreflang="en" href="https://jin850921.github.io/chejiplay/en/"><link rel="alternate" hreflang="ja" href="https://jin850921.github.io/chejiplay/ja/"><link rel="alternate" hreflang="ko" href="https://jin850921.github.io/chejiplay/ko/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="車機Play · CarPlay／Android Auto 的下載與啟動入口">
+<meta property="og:description" content="把 DiPlay（CarPlay）與 DiAuto（Android Auto）的最新版 APK 抓進車機，點卡片就開啟；還能掛 Google Maps 與你自己挑的快捷鈕。獨立社群專案，與 Apple、Google、BYD 無隸屬關係。">
+<meta property="og:url" content="https://jin850921.github.io/chejiplay/">
+<meta property="og:image" content="https://jin850921.github.io/chejiplay/screenshots/01_主畫面_淺色.png">
+<meta name="twitter:card" content="summary_large_image">
+</head><body><main>
+<header>
+<a class="brand" href="./"><img src="./icon.png" width="56" height="56" alt="">
+<span><strong>車機Play</strong><small>獨立的社群專案</small></span></a>
+<nav class="languages" aria-label="Language"><a href="./" lang="zh-Hant" hreflang="zh-Hant" aria-current="page">繁體中文（台灣）</a><a href="./zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a><a href="./en/" lang="en" hreflang="en">English</a><a href="./ja/" lang="ja" hreflang="ja">日本語</a><a href="./ko/" lang="ko" hreflang="ko">한국어</a></nav>
+</header>
+<section class="hero">
+<span class="badge">正式第一版 · <bdi>1.0</bdi></span>
+<h1>車機螢幕上的<br>CarPlay／Android Auto 入口</h1>
+<p class="intro">一個卡片式的下載與啟動入口：抓 DiPlay／DiAuto 的最新版 APK，裝好之後點一下就進入。</p>
+<div class="actions">
+<a class="button" href="https://github.com/jin850921/chejiplay/releases/download/v1.0/chejiplay-1.0.apk">下載 APK <span aria-hidden="true">↓</span></a>
+<a class="button secondary" href="#s0">安裝步驟</a>
+<a class="button secondary" href="https://github.com/jin850921/chejiplay">GitHub 原始碼</a>
+</div>
+<p class="promise">不需要 root、不需要 ADB、不需要手機端 App。</p>
+<p class="note">APK 裝在車機上，不是裝在手機。純 Java／framework 專案，沒有 Gradle、沒有 AndroidX、沒有任何第三方相依。能不能安裝、能不能加入開機自啟動，都由車機系統決定。</p>
+<p class="note scope"><strong>DiPlay 與 DiAuto 以 BYD 車機為主力，其他品牌不保證可用。</strong></p>
+</section>
+<section class="gallery"><h2>畫面</h2>
+<div class="screens"><figure>
+<a href="./screenshots/01_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%BA%E8%89%B2.png"><img src="./screenshots/01_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%BA%E8%89%B2.png"
+width="1280" height="720" loading="lazy" alt="主畫面（淺色）：上排 DiPlay／DiAuto，下排 Google Maps 與兩欄自訂快捷鈕。"></a>
+<figcaption>主畫面（淺色）：上排 DiPlay／DiAuto，下排 Google Maps 與兩欄自訂快捷鈕。</figcaption></figure><figure>
+<a href="./screenshots/02_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%B1%E8%89%B2.png"><img src="./screenshots/02_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%B1%E8%89%B2.png"
+width="1280" height="720" loading="lazy" alt="主畫面（深色）：同一個版面，顏色跟著主題換。"></a>
+<figcaption>主畫面（深色）：同一個版面，顏色跟著主題換。</figcaption></figure><figure>
+<a href="./screenshots/07_%E4%B8%BB%E7%95%AB%E9%9D%A2%E5%BF%AB%E6%8D%B7%E9%88%95%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94.png"><img src="./screenshots/07_%E4%B8%BB%E7%95%AB%E9%9D%A2%E5%BF%AB%E6%8D%B7%E9%88%95%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94.png"
+width="2680" height="812" loading="lazy" alt="快捷鈕關閉 → 開啟：下排從整列不存在變成三張等寬卡。"></a>
+<figcaption>快捷鈕關閉 → 開啟：下排從整列不存在變成三張等寬卡。</figcaption></figure><figure>
+<a href="./screenshots/09_%E6%89%8B%E5%8B%95%E6%AC%84%E4%BD%8D_%E6%9C%AA%E6%94%BE%E8%88%87%E5%B7%B2%E6%94%BE%E5%B0%8D%E6%AF%94.png"><img src="./screenshots/09_%E6%89%8B%E5%8B%95%E6%AC%84%E4%BD%8D_%E6%9C%AA%E6%94%BE%E8%88%87%E5%B7%B2%E6%94%BE%E5%B0%8D%E6%AF%94.png"
+width="2680" height="812" loading="lazy" alt="手動欄位：還沒選 App → 兩欄都選好之後。"></a>
+<figcaption>手動欄位：還沒選 App → 兩欄都選好之後。</figcaption></figure><figure>
+<a href="./screenshots/06_%E8%BC%89%E5%85%A5%E5%8B%95%E7%95%AB.png"><img src="./screenshots/06_%E8%BC%89%E5%85%A5%E5%8B%95%E7%95%AB.png"
+width="1316" height="812" loading="lazy" alt="載入動畫的四個時間點（冷開機跑一次，總長 1.5 秒）。"></a>
+<figcaption>載入動畫的四個時間點（冷開機跑一次，總長 1.5 秒）。</figcaption></figure></div>
+<p class="note">每張都是 1280×720 的 1:1 對照圖，依 repo 裡 `res/` 的實際色值與版面渲出來，不是設計稿；尚未裝上車機驗證。</p></section>
+<section class="card" id="s0" style="scroll-margin-top:12px">
+<span class="eyebrow">01</span>
+<h2>裝在車機上</h2>
+<p>裝在車機，不是裝在 iPhone 或 Android 手機。整個 App 離線也能用，只有檢查更新與下載 APK 需要網路。</p>
+<ol><li>停車時下載 <code>chejiplay-1.0.apk</code>，用車機自己的安裝程式開啟；車機要允許安裝其他來源的 APK。</li><li>打開「車機Play」，主畫面兩排卡片會直接讀車機上的安裝狀態。</li><li>把「車機Play」加入車機的開機自啟動清單，之後每次開車機螢幕就自動打開這裡。清單的名稱與位置依車機品牌不同。</li><li>點卡片就進入 CarPlay 或 Android Auto；那款還沒裝的話會先下載，下載中長按卡片可以取消。</li></ol><p class="note">本 App 不需要 ADB、不需要 root，也不修改、不重新打包 DiPlay／DiAuto 的 APK——下載位置永遠是對方 Releases 的官方資產。</p>
+</section><section class="card" id="s1">
+<span class="eyebrow">02</span>
+<h2>這支 App 做什麼</h2>
+
+<ul><li>主畫面兩排卡片：上排 DiPlay（CarPlay）與 DiAuto（Android Auto），下排是 Google Maps 快捷鈕與你自己挑的 1–2 個 App。</li><li>每天檢查一次 GitHub Releases 的最新版，不跳任何提醒畫面；有新版只在右上角 ⋮ 亮起紅點。</li><li>卡片本身就是動作：沒裝就下載，已裝就開啟；長按才出現取消下載／換 App／移除。</li><li>下載好的 APK 交給車機自己的安裝程式，不經過任何中間服務。</li><li>右上角 ⋮ 一共 9 列：查版號、三個下載來源、批次下載、本 App 更新、快捷鈕設定、說明頁、語言、主題。</li></ul>
+</section><section class="card" id="s2">
+<span class="eyebrow">03</span>
+<h2>快捷鈕與圖示</h2>
+
+<ul><li>下排那一列的圖一律取車機上那套 App 自己的圖示，查得到就滿版顯示、不壓色。</li><li>查不到才退回內建預設圖：Google Maps 是官方配色的圖釘，還沒放 App 的欄位是「＋」。</li><li>裝好、移除，或那套 App 換了圖示，回到本 App 或收到套件廣播就重畫，不用重開程式。</li><li>Google Maps 快捷鈕只負責開啟，永不下載、永不檢查更新——Maps 的更新交給車機上的 Google Play。</li><li>手動欄位最多兩欄：點一下是選 App 或開啟 App，長按換一個或從主畫面移除。</li></ul>
+</section><section class="card" id="s3">
+<span class="eyebrow">04</span>
+<h2>載入動畫</h2>
+<p>冷開機進主畫面時先蓋一層載入動畫，總長 1.5 秒；換主題、換語言只重繪畫面，不會重播。</p>
+<ul><li>車身線稿從畫面左側駛入，logo 徽章彈到位，標題與提示接著淡入。</li><li>進度條顯示啟動進度：跟著動畫從 0 走到 90%，最後 10% 要等首輪排版真的回來才解鎖。</li><li>排版一完成就整層淡出；保險上限 3 秒，走這條時進度留在實際到達的數值，不會假裝讀完。</li></ul>
+</section><section class="card" id="s4">
+<span class="eyebrow">05</span>
+<h2>介面語言</h2>
+<p>介面有繁體中文、簡體中文、English、日本語、한국어，外加「自動」照車機語系。</p>
+<ul><li>選完立刻重繪畫面，不用重裝、不會掉設定。</li><li>App 名稱、品牌名與車機上那套 App 的名字刻意不翻——翻了就找不到那支 App。</li><li>譯文由專案維護者撰寫，沒有母語人士校過；要改任何一句，改 `L.java` 那一列就好。</li></ul>
+</section><section class="card" id="s5">
+<span class="eyebrow">06</span>
+<h2>更新與簽章</h2>
+<p>版號一律寫成 `version_name(version_code)`，例如 <bdi>1.0(1)</bdi>。</p>
+<ul><li>每日檢查讀的是這個 repo 的 Releases：tag <code>v1.0</code>、資產檔名 <code>chejiplay-1.0.apk</code>。</li><li>檢查只查版號，不會自己安裝；下載與更新一律從 ⋮ 選單裡那幾列手動執行。</li><li>換裝新版必須用同一支簽名金鑰，否則車機會拒絕升級安裝；金鑰與密碼檔不放在 repo 裡。</li><li>「DiPlay＋DiAuto 兩個都下載」是批次列，不含本 App；更新車機Play 是選單裡單獨那列。</li></ul>
+</section><section class="card" id="s6">
+<span class="eyebrow">07</span>
+<h2>尚未裝上車機驗證</h2>
+<p>開發過程沒有接過實車車機，也沒有模擬器。所有驗證都是靜態的：從簽好的 APK 挖出 badging、資源 ID、DEX 字串池與位元碼比對，加上翻譯覆蓋率檢查與 1280×720 對照圖。</p>
+<ul><li>實際外觀、車機有沒有給安裝權、各語言換行之後的文字長度，都要裝上車機才知道。</li><li>車機到底有沒有回報 Google Maps 自己的圖示（查不到時那一格是內建圖釘，不會變空白）。</li><li>訊息（Toast）在車機字體下放得下幾個字——句子長度按 14sp 估算，每句都刻意留在已知放得下的寬度以內。</li></ul><p class="note">遇到問題請附車機品牌、DiLink／Android 版本、APK 版號與發生時間，開一個 issue。</p>
+<a href="https://github.com/jin850921/chejiplay/issues/new/choose" target="_blank" rel="noopener">回報問題 ↗</a></section>
+<footer><nav><a href="https://github.com/jin850921/chejiplay">原始碼</a><a href="https://github.com/jin850921/chejiplay/releases">Releases</a><a href="https://github.com/jin850921/chejiplay/issues">回報問題</a><a href="https://github.com/jin850921/chejiplay/blob/main/README.md">繁體中文 README</a></nav><p>車機Play 是獨立社群專案，與 Apple、Google、BYD 沒有任何隸屬關係。DiPlay、DiAuto 是 GitHub 上的獨立社群專案，本 App 只負責抓最新版 APK 與開啟，下載位置一律是對方 Releases 的官方資產。CarPlay 及其圖示屬 Apple Inc.，Android Auto 及其圖示屬 Google LLC。</p></footer>
+</main></body></html>

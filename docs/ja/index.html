@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja" dir="ltr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>車機Play · CarPlay／Android Auto のダウンロードと起動</title>
+<meta name="description" content="DiPlay（CarPlay）と DiAuto（Android Auto）の最新版 APK をカーナビに取得し、カードをタップするとすぐ起動します。Google Maps と、自分で選んだアプリを最大 2 つまで固定できます。Apple、Google、BYD とは関係のない独立したコミュニティプロジェクトです。">
+<meta name="theme-color" content="#0F2B45">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="canonical" href="https://jin850921.github.io/chejiplay/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://jin850921.github.io/chejiplay/"><link rel="alternate" hreflang="zh-Hans" href="https://jin850921.github.io/chejiplay/zh-Hans/"><link rel="alternate" hreflang="en" href="https://jin850921.github.io/chejiplay/en/"><link rel="alternate" hreflang="ja" href="https://jin850921.github.io/chejiplay/ja/"><link rel="alternate" hreflang="ko" href="https://jin850921.github.io/chejiplay/ko/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="車機Play · CarPlay／Android Auto のダウンロードと起動">
+<meta property="og:description" content="DiPlay（CarPlay）と DiAuto（Android Auto）の最新版 APK をカーナビに取得し、カードをタップするとすぐ起動します。Google Maps と、自分で選んだアプリを最大 2 つまで固定できます。Apple、Google、BYD とは関係のない独立したコミュニティプロジェクトです。">
+<meta property="og:url" content="https://jin850921.github.io/chejiplay/ja/">
+<meta property="og:image" content="https://jin850921.github.io/chejiplay/screenshots/01_主畫面_淺色.png">
+<meta name="twitter:card" content="summary_large_image">
+</head><body><main>
+<header>
+<a class="brand" href="../"><img src="../icon.png" width="56" height="56" alt="">
+<span><strong>車機Play</strong><small>独立したコミュニティプロジェクト</small></span></a>
+<nav class="languages" aria-label="Language"><a href="../" lang="zh-Hant" hreflang="zh-Hant">繁體中文（台灣）</a><a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a><a href="../en/" lang="en" hreflang="en">English</a><a href="../ja/" lang="ja" hreflang="ja" aria-current="page">日本語</a><a href="../ko/" lang="ko" hreflang="ko">한국어</a></nav>
+</header>
+<section class="hero">
+<span class="badge">初回リリース · <bdi>1.0</bdi></span>
+<h1>カーナビ画面の<br>CarPlay／Android Auto 入口</h1>
+<p class="intro">カード形式のダウンロード＆起動アプリです。DiPlay／DiAuto の最新版 APK を取得し、インストール後はカードをタップするだけで始動します。</p>
+<div class="actions">
+<a class="button" href="https://github.com/jin850921/chejiplay/releases/download/v1.0/chejiplay-1.0.apk">APK をダウンロード <span aria-hidden="true">↓</span></a>
+<a class="button secondary" href="#s0">インストール手順</a>
+<a class="button secondary" href="https://github.com/jin850921/chejiplay">GitHub のソース</a>
+</div>
+<p class="promise">root 不要、ADB 不要、スマホ側のアプリも不要。</p>
+<p class="note">APK はスマホではなくカーナビにインストールします。Java と framework API のみで構成し、Gradle、AndroidX、外部依存は一切ありません。インストールの可否や自動起動に登録できるかは、カーナビ側のシステム次第です。</p>
+<p class="note scope"><strong>DiPlay と DiAuto は BYD 車のカーナビを主力としているため、他の車種では動作を保証しません。</strong></p>
+</section>
+<section class="gallery"><h2>画面</h2>
+<div class="screens"><figure>
+<a href="../screenshots/01_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%BA%E8%89%B2.png"><img src="../screenshots/01_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%BA%E8%89%B2.png"
+width="1280" height="720" loading="lazy" alt="ホーム画面（ライト）：上段に DiPlay／DiAuto、下段に Google Maps と自作ショートカット 2 枠。"></a>
+<figcaption>ホーム画面（ライト）：上段に DiPlay／DiAuto、下段に Google Maps と自作ショートカット 2 枠。</figcaption></figure><figure>
+<a href="../screenshots/02_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%B1%E8%89%B2.png"><img src="../screenshots/02_%E4%B8%BB%E7%95%AB%E9%9D%A2_%E6%B7%B1%E8%89%B2.png"
+width="1280" height="720" loading="lazy" alt="ホーム画面（ダーク）：同じレイアウトで、色はテーマに追従します。"></a>
+<figcaption>ホーム画面（ダーク）：同じレイアウトで、色はテーマに追従します。</figcaption></figure><figure>
+<a href="../screenshots/07_%E4%B8%BB%E7%95%AB%E9%9D%A2%E5%BF%AB%E6%8D%B7%E9%88%95%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94.png"><img src="../screenshots/07_%E4%B8%BB%E7%95%AB%E9%9D%A2%E5%BF%AB%E6%8D%B7%E9%88%95%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94.png"
+width="2680" height="812" loading="lazy" alt="ショートカット OFF → ON：下段の列がなくなる状態から等幅 3 枚のカードに変わります。"></a>
+<figcaption>ショートカット OFF → ON：下段の列がなくなる状態から等幅 3 枚のカードに変わります。</figcaption></figure><figure>
+<a href="../screenshots/09_%E6%89%8B%E5%8B%95%E6%AC%84%E4%BD%8D_%E6%9C%AA%E6%94%BE%E8%88%87%E5%B7%B2%E6%94%BE%E5%B0%8D%E6%AF%94.png"><img src="../screenshots/09_%E6%89%8B%E5%8B%95%E6%AC%84%E4%BD%8D_%E6%9C%AA%E6%94%BE%E8%88%87%E5%B7%B2%E6%94%BE%E5%B0%8D%E6%AF%94.png"
+width="2680" height="812" loading="lazy" alt="手動枠：アプリを選ぶ前と、2 枠とも選んだ後。"></a>
+<figcaption>手動枠：アプリを選ぶ前と、2 枠とも選んだ後。</figcaption></figure><figure>
+<a href="../screenshots/06_%E8%BC%89%E5%85%A5%E5%8B%95%E7%95%AB.png"><img src="../screenshots/06_%E8%BC%89%E5%85%A5%E5%8B%95%E7%95%AB.png"
+width="1316" height="812" loading="lazy" alt="起動アニメーションの 4 つの時点（コールドスタート時のみ、全長 1.5 秒）。"></a>
+<figcaption>起動アニメーションの 4 つの時点（コールドスタート時のみ、全長 1.5 秒）。</figcaption></figure></div>
+<p class="note">いずれも 1280×720 を 1:1 で描画した比較図で、リポジトリ内の `res/` にある実際の配色とレイアウトから生成しています。デザイン案ではなく、実機での確認はまだです。</p></section>
+<section class="card" id="s0" style="scroll-margin-top:12px">
+<span class="eyebrow">01</span>
+<h2>カーナビにインストール</h2>
+<p>インストール先はカーナビ側です（iPhone や Android スマホではありません）。アプリ自体はオフラインでも使え、ネットワークが必要なのは更新確認と APK ダウンロードだけです。</p>
+<ol><li>停車中に <code>chejiplay-1.0.apk</code> をダウンロードし、カーナビ自身のインストーラーで開きます。他の出所からの APK インストールを許可してください。</li><li>「車機Play」を開くと、2 列のカードがカーナビ上のインストール状況を直接読み取ります。</li><li>「車機Play」を起動時自動スタートのリストに登録すると、画面が点くたびにこのページが開きます。名称と場所は車載メーカーによって異なります。</li><li>カードをタップすると CarPlay または Android Auto に入ります。未インストールの場合は先にダウンロードし、ダウンロード中に長押しすればキャンセルできます。</li></ol><p class="note">ADB も root も不要です。DiPlay／DiAuto の APK を改変したり再パッケージしたりすることはなく、ダウンロード先は常に相手 Releases の公式アセットです。</p>
+</section><section class="card" id="s1">
+<span class="eyebrow">02</span>
+<h2>このアプリの役割</h2>
+
+<ul><li>ホームは 2 列のカード：上段に DiPlay（CarPlay）と DiAuto（Android Auto）、下段に Google Maps と、自分で選んだ 1〜2 個のアプリ。</li><li>GitHub Releases を 1 日 1 回チェックしますが、リマインダー画面は出しません。新版があっても ⋮ メニューに赤い点灯が出るだけです。</li><li>カード自体が操作です。未インストールならダウンロード、済みなら起動。長押しでキャンセル／差し替え／削除が出ます。</li><li>ダウンロードした APK はカーナビ自身のインストーラーに引き渡し、中継サービスは一切使いません。</li><li>⋮ メニューは全 9 行：バージョン確認、3 つのダウンロード元、まとめてダウンロード、本アプリの更新、ショートカット設定、説明ページ、言語、テーマ。</li></ul>
+</section><section class="card" id="s2">
+<span class="eyebrow">03</span>
+<h2>ショートカットとアイコン</h2>
+
+<ul><li>下段のアイコンはすべてカーナビ上のアプリ自身のアイコンを使います。取得できれば色を乗せず全面表示にします。</li><li>取得できない場合だけ内蔵の既定図に戻ります。Google Maps は公式カラーのピン、空枠は「＋」です。</li><li>インストール、削除、あるいは相手のアプリがアイコンを変えた場合、本アプリに戻る、またはパッケージのブロードキャストで再描画され、再起動は不要です。</li><li>Google Maps ショートカットは起動のみ担当し、ダウンロードも更新確認もしません。Maps の更新はカーナビ上の Google Play に任せます。</li><li>手動枠は最大 2 つ：タップで選択または起動、長押しで差し替えまたはホーム画面から削除。</li></ul>
+</section><section class="card" id="s3">
+<span class="eyebrow">04</span>
+<h2>起動アニメーション</h2>
+<p>コールドスタート時は全長 1.5 秒のレイヤーが画面を覆います。テーマや言語の切り替えは再描画のみで、再生されません。</p>
+<ul><li>車の線画が左から入り、ロゴバッジが跳ねて定位置に、続いてタイトルと案内がフェードインします。</li><li>進捗バーは起動進捗を表示し、アニメーションに合わせて 0 から 90% まで進みます。最後の 10% は最初のレイアウトが実際に戻ったときだけ解放されます。</li><li>レイアウトが終わると全体がフェードアウトします。保険の上限は 3 秒で、そちらを通った場合は実際に到達した値のままになり、読み終えたふりはしません。</li></ul>
+</section><section class="card" id="s4">
+<span class="eyebrow">05</span>
+<h2>表示言語</h2>
+<p>繁体字中国語、簡体字中国語、English、日本語、한국어、およびカーナビのロケールに従う「自動」を選べます。</p>
+<ul><li>選択直後に画面を再描画します。再インストールは不要で、設定も消えません。</li><li>アプリ名、ブランド名、カーナビ上のアプリ名は意図的に翻訳しません。翻訳するとそのアプリを探せなくなります。</li><li>訳文はメンテナーが作成し、母語話者による校閲は受けていません。文を変更するには `L.java` の 1 行を直してください。</li></ul>
+</section><section class="card" id="s5">
+<span class="eyebrow">06</span>
+<h2>更新と署名</h2>
+<p>バージョンは常に `version_name(version_code)` の形式で表記します。例：<bdi>1.0(1)</bdi>。</p>
+<ul><li>毎日チェックするのはこのリポジトリの Releases です。tag は <code>v1.0</code>、アセット名は <code>chejiplay-1.0.apk</code>。</li><li>チェックはバージョン番号の比較だけで、自動インストールはしません。ダウンロードも更新も ⋮ メニューの各行から手動で実行します。</li><li>新版への入れ替えは同じ署名鍵でなければカーナビがアップグレードを拒否します。鍵とパスワードファイルはリポジトリに含めません。</li><li>「DiPlay＋DiAuto をまとめてダウンロード」は 2 件のみで本アプリを含みません。車機Play の更新は別の行です。</li></ul>
+</section><section class="card" id="s6">
+<span class="eyebrow">07</span>
+<h2>実車での未検証</h2>
+<p>開発中に実車にもシミュレータにも接続していません。検証はすべて静的です。署名済み APK から badging、リソース ID、DEX の文字列プールとバイトコードを取り出して比較し、翻訳カバレッジ確認と 1280×720 の比較図も生成しています。</p>
+<ul><li>実際の見た目、カーナビがインストール権限を出すか、各言語で行折り返し後の文字列長は、実機でしか確認できません。</li><li>カーナビが Google Maps 自身のアイコンを返すかどうか（返さない場合、そのカードは内蔵のピンになり、空白にはなりません）。</li><li>トーストがカーナビのフォントで何文字入るか。長さは 14sp で見積もり、既に入ることが分かっている幅以内に各文を抑えています。</li></ul><p class="note">問題が起きたときは車載メーカー、DiLink／Android のバージョン、APK のバージョン、発生時刻を添えて issue を開いてください。</p>
+<a href="https://github.com/jin850921/chejiplay/issues/new/choose" target="_blank" rel="noopener">問題を報告 ↗</a></section>
+<footer><nav><a href="https://github.com/jin850921/chejiplay">ソースコード</a><a href="https://github.com/jin850921/chejiplay/releases">Releases</a><a href="https://github.com/jin850921/chejiplay/issues">問題を報告</a><a href="https://github.com/jin850921/chejiplay/blob/main/README.ja.md">日本語 README</a></nav><p>車機Play は Apple、Google、BYD と一切関係のない独立したコミュニティプロジェクトです。DiPlay と DiAuto は GitHub 上の別プロジェクトで、本アプリは最新版 APK を取得して起動するだけを行い、ダウンロード先は常に相手 Releases の公式アセットです。CarPlay とそのアイコンは Apple Inc. に、Android Auto とそのアイコンは Google LLC に帰属します。</p></footer>
+</main></body></html>
